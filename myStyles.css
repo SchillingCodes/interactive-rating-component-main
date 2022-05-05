@@ -1,0 +1,88 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 1rem;
+    font-size: 15px;
+    color: var(--LightGrey);
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--Orange);
+    border-radius: 4rem;
+    border-width: 0;
+    height: 3rem;
+    margin: 1rem;
+    letter-spacing: 2px;
+}
+
+img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal {
+    background-color: rgb(37, 35, 41);
+    background-image: radial-gradient(800px at top, var(--DarkBlue), var(--VeryDarkBlue));
+    height: fit-content;
+    width: 40vh;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 25vh;
+    padding: 1rem;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.dot {
+    height: 3.25rem;
+    width: 3.25rem;
+    background-color: var(--DarkBlue);
+    color: var(--LightGrey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.star-dot {
+    margin: 1rem;
+}
